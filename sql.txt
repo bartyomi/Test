@@ -1,0 +1,4 @@
+SELECT COUNT(*)
+FROM Employees
+LEFT JOIN MaskedEmployees ON Employees.id = MaskedEmployees.id
+WHERE MaskedEmployees.name = Employees.name;
